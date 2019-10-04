@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `nehalem-starter`,
-    siteUrl: `https://nehalem.netlify.com`,
-    description: `A Gatsby starter for nehalem`,
+    title: `AM Web Development`,
+    siteUrl: `https://amwebdev.netlify.com`,
+    description: `Websites, Apps, and Educational Materials`,
     topics: [],
     menu: [
       {
@@ -10,47 +10,55 @@ module.exports = {
         path: '/'
       },
       {
-        name: 'Example',
-        path: '/page'
+        name: 'Portfolio',
+        path: '/portfolio'
       },
     ],
     footerMenu: [
       {
-        name: 'Example',
-        path: '/page'
+        name: 'Portfolio',
+        path: '/portfolio'
       },
     ],
     search: true,
     author: {
-      name: `nehalem`,
-      description: `I'm <strong>nehalem</strong>, a Gatsby theme by 
-        <a href="https://nehalist.io" rel="noopener" target="_blank">nehalist.io</a>. If you like what you see feel free to give a 
-        <a href="https://github.com/nehalist/gatsby-theme-nehalem" rel="noopener" target="_blank">star on GitHub!</a>`,
+      name: `Andrew Mitchell`,
+      description: `
+        I'm <strong>Andrew Mitchell</strong>, an Entrepneur turned Software Engineer.
+        This site acts a my portfolio for side projects as well a place I make blog posts to
+        reaffirm my own knowledge and give back to the community.`,
       social: {
         facebook: ``,
-        twitter: `https://twitter.com/nehalist`,
-        linkedin: `https://www.linkedin.com/in/kevin-hirczy-7a9377106/`,
+        twitter: ``,
+        linkedin: `https://www.linkedin.com/in/andrewgeorgemitchell/`,
         instagram: ``,
         youtube: ``,
-        github: `https://github.com/nehalist`,
+        github: `https://github.com/andrewgeorgemitchell/`,
         twitch: ``
       }
     }
   },
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `imageAssets`,
+        path: `${__dirname}/content/assets/images`
+      }
+    },
+    {
       resolve: `@nehalist/gatsby-theme-nehalem`,
       options: {
         manifest: {
-          name: `nehalem - A Gatsby theme`,
-          short_name: `nehalem`,
+          name: `AM Web Development`,
+          short_name: `AM WebDev`,
           start_url: `/`,
           background_color: `#a4cbb8`,
           theme_color: `#a4cbb8`,
           display: `minimal-ui`,
-          icon: `${__dirname}/content/assets/images/logo.png`
+          icon: `${__dirname}/content/assets/images/SquareLogo.png`
         }
       }
-    }
+    },
   ]
 };
