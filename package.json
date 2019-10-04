@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-nehalem",
-  "description": "A starter for the Gatsby Nehalem theme",
+  "name": "am-web-development",
+  "description": "Web home of AM Web development",
   "author": {
-    "name": "Kevin Hirczy",
-    "email": "kevin@nehalist.io",
-    "url": "https://nehalist.io"
+    "name": "Andrew Mitchell",
+    "email": "andrewgeorgemitchell@gmail.com",
+    "url": "https://www.amwebdev.com"
   },
   "private": true,
   "version": "1.0.0",
