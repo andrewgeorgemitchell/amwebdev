@@ -1,4 +1,19 @@
-- name: Demo
+# - name: Gatsby
+#   color: "#007acc"
+#   icon: ./assets/images/gatsby.png
+#   featured: true
+
+- name: NodeJS
   color: "#007acc"
-  icon: ./assets/images/logo.png
+  icon: ./assets/images/nodejs.png
   featured: true
+
+# - name: Python
+#   color: "#007acc"
+#   icon: ./assets/images/Python.png
+#   featured: true
+
+# - name: React
+#   color: "#007acc"
+#   icon: ./assets/images/React.png
+#   featured: true
