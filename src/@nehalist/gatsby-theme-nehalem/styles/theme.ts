@@ -1,10 +1,10 @@
-import {DefaultTheme} from '@nehalist/gatsby-theme-nehalem';
+import { DefaultTheme} from '@nehalist/gatsby-theme-nehalem';
 
 const Theme: DefaultTheme = {
   layout: {
-    backgroundColor: `#fafafa`,
-    primaryColor: `#a4cbb8`,
-    linkColor: `#a4cbb8`,
+    backgroundColor: `#eceff1`,
+    primaryColor: `#44596e`,
+    linkColor: `#1976d2`,
   },
   breakpoints: {
     xs: `425px`,
@@ -23,7 +23,7 @@ const Theme: DefaultTheme = {
     },
     header: {
       height: `440px`,
-      background: `linear-gradient(-45deg, #44596e, #a4cbb8) repeat scroll 0 0 transparent`,
+      background: `linear-gradient(-45deg, #b0bec5, #44596e) repeat scroll 0 0 transparent`,
     },
   },
 };
