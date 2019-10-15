@@ -19,6 +19,8 @@
   "dependencies": {
     "@nehalist/gatsby-theme-nehalem": "^1.0.3",
     "gatsby": "^2.13.55",
+    "gatsby-plugin-sass": "^2.1.20",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },

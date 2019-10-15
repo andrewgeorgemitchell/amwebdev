@@ -1,64 +1,65 @@
 module.exports = {
   siteMetadata: {
-    title: `AM Web Development`,
-    siteUrl: `https://amwebdev.netlify.com`,
-    description: `Websites, Apps, and Educational Materials`,
+    title: 'AM Web Development',
+    siteUrl: 'https://amwebdev.netlify.com',
+    description: 'Websites, Apps, and Educational Materials',
     topics: [],
     menu: [
       {
         name: 'Home',
-        path: '/'
+        path: '/',
       },
       {
         name: 'Portfolio',
-        path: '/portfolio'
+        path: '/portfolio',
       },
     ],
     footerMenu: [
       {
         name: 'Portfolio',
-        path: '/portfolio'
+        path: '/portfolio',
       },
     ],
     search: true,
     author: {
-      name: `Andrew Mitchell`,
+      name: 'Andrew Mitchell',
       description: `
         I'm <strong>Andrew Mitchell</strong>, an Entrepneur turned Software Engineer.
         This site acts a my portfolio for side projects as well a place I make blog posts to
         reaffirm my own knowledge and give back to the community.`,
       social: {
-        facebook: ``,
-        twitter: ``,
-        linkedin: `https://www.linkedin.com/in/andrewgeorgemitchell/`,
-        instagram: ``,
-        youtube: ``,
-        github: `https://github.com/andrewgeorgemitchell/`,
-        twitch: ``
-      }
-    }
+        facebook: '',
+        twitter: '',
+        linkedin: 'https://www.linkedin.com/in/andrewgeorgemitchell/',
+        instagram: '',
+        youtube: '',
+        github: 'https://github.com/andrewgeorgemitchell/',
+        twitch: '',
+      },
+    },
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `imageAssets`,
-        path: `${__dirname}/content/assets/images`
-      }
+        name: 'imageAssets',
+        path: `${__dirname}/content/assets/images`,
+      },
     },
     {
-      resolve: `@nehalist/gatsby-theme-nehalem`,
+      resolve: '@nehalist/gatsby-theme-nehalem',
       options: {
         manifest: {
-          name: `AM Web Development`,
-          short_name: `AM WebDev`,
-          start_url: `/`,
-          background_color: `#a4cbb8`,
-          theme_color: `#a4cbb8`,
-          display: `minimal-ui`,
-          icon: `${__dirname}/content/assets/images/SquareLogo.png`
-        }
-      }
+          name: 'AM Web Development',
+          short_name: 'AM WebDev',
+          start_url: '/',
+          background_color: '#a4cbb8',
+          theme_color: '#a4cbb8',
+          display: 'minimal-ui',
+          icon: `${__dirname}/content/assets/images/SquareLogo.png`,
+        },
+      },
     },
-  ]
+    'gatsby-plugin-sass',
+  ],
 };
