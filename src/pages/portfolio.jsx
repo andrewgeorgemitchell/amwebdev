@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import Layout from '@nehalist/gatsby-theme-nehalem/src/components/layout';
 import SEO from '@nehalist/gatsby-theme-nehalem/src/components/seo';
