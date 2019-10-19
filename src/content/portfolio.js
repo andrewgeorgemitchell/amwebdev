@@ -44,6 +44,18 @@ export default [
     url: 'https://www.rockon3v3.com',
   },
   {
+    title: 'Cuz Concrete',
+    subHeader: 'Wordpress Site',
+    avatarSrc: 'https://res.cloudinary.com/dpka4vhu6/image/upload/v1571521856/amwebdev/cuz-concrete-logo.png',
+    screenshot: 'https://res.cloudinary.com/dpka4vhu6/image/upload/v1571521860/amwebdev/cuz-concrete-screenshot.png',
+    description: 'A website for a local concrete manufacturer, which acts as a running catalog of all the types of precast concrete products they have to offer.',
+    skills: [
+      'Wordpress',
+      'Woocommerce',
+    ],
+    url: 'https://www.cuzconcrete.com',
+  },
+  {
     title: 'Melnick & Son\'s Painting Business',
     subHeader: 'Wordpress Site',
     avatarSrc: 'https://res.cloudinary.com/dpka4vhu6/image/upload/v1528997638/amwebdev/logo.jpg',
