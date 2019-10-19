@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto-Bold');
+
+$primaryColor: #1A4542;
+$secondaryColor: #8599AB;
+$healthyColor: #4caf50;
+$warnColor: #ffeb3b;
+$dangerColor: #f44336;
+
+$primaryFont: 'Roboto';
+$primaryHeaderFont: 'Roboto-Bold';
+
+// Screen size variables
+$screen-xs-min: 425px;  // Tiny phones
+$screen-sm-min: 600px;  // Small tablets and large smartphones (landscape view)
+$screen-md-sm-min: 800px;  // Small tablets (portrait view
+$screen-md-min: 1000px;  // Small tablets (portrait view)
+$screen-lg-min: 1200px;  // Tablets and small desktops
+$screen-xl-min: 1400px; // Large tablets and desktops
+
+// Mixins
+@mixin xs { @media (min-width: #{$screen-xs-min}) {@content;} } // Tiny devices
+@mixin sm { @media (min-width: #{$screen-sm-min}) {@content;} } // Small devices
+@mixin mdSm { @media (min-width: #{$screen-md-sm-min}) {@content;} } // Medium devices
+@mixin md { @media (min-width: #{$screen-md-min}) {@content;} } // Medium devices
+@mixin lg { @media (min-width: #{$screen-lg-min}) {@content;} } // Large devices
+@mixin xl { @media (min-width: #{$screen-xl-min}) {@content;} } // Extra large devices
+
+.container {
+  padding: 0px 2%;
+  @include sm {
+    padding: 0px 5%;
+  }
+  @include md {
+    padding: 0px 7%;
+  }
+  @include lg {
+    padding: 0px 10%;
+  }
+  @include xl {
+    padding: 0px 15%;
+  }
+}
