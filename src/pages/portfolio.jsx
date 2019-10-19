@@ -60,7 +60,7 @@ const Portfolio = ({ location }) => (
                   >
                     {description}
                   </p>
-                  <strong>Technlogies Used:</strong>
+                  <strong>Technologies Used:</strong>
                   <div className={styles.chipsDiv}>
                     {
                       skills.map((skill) => (

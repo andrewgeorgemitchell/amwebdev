@@ -13,18 +13,26 @@ module.exports = {
         name: 'Portfolio',
         path: '/portfolio',
       },
+      {
+        name: 'Contact',
+        path: '/contact',
+      },
     ],
     footerMenu: [
       {
         name: 'Portfolio',
         path: '/portfolio',
       },
+      {
+        name: 'Contact',
+        path: '/contact',
+      },
     ],
     search: true,
     author: {
       name: 'Andrew Mitchell',
       description: `
-        I'm <strong>Andrew Mitchell</strong>, an Entrepneur turned Software Engineer.
+        I'm <strong>Andrew Mitchell</strong>, an Entrepreneur turned Software Engineer.
         This site acts a my portfolio for side projects as well a place I make blog posts to
         reaffirm my own knowledge and give back to the community.`,
       social: {
