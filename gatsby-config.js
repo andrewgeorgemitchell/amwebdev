@@ -2,8 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'AM Web Development',
     siteUrl: 'https://amwebdev.netlify.com',
-    description: 'Websites, Apps, and Educational Materials',
-    topics: [],
+    description: 'We create %TOPICS%',
+    topics: [
+      'Websites',
+      'Apps',
+      'Developer Education Materials',
+    ],
     menu: [
       {
         name: 'Home',
