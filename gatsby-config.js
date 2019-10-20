@@ -7,6 +7,8 @@ module.exports = {
       'Websites',
       'Apps',
       'Educational Blog Posts',
+      '',
+      '',
     ],
     menu: [
       {
