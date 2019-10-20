@@ -6,7 +6,6 @@ module.exports = {
     topics: [
       'Websites',
       'Apps',
-      'Killer Content',
       'Educational Blog Posts',
     ],
     menu: [
