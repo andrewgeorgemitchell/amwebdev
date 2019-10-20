@@ -6,13 +6,17 @@
 
 .columnsDiv {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include md {
+    justify-content: space-between;
+  }
   .ourTeamDiv {
     h2 {
       margin-top: 0px;
     }
     .teamMembersRow {
-      min-width: 450px;
+      max-width: 400px;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
