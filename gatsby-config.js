@@ -6,7 +6,8 @@ module.exports = {
     topics: [
       'Websites',
       'Apps',
-      'Developer Education Materials',
+      'Killer Content',
+      'Educational Blog Posts',
     ],
     menu: [
       {
@@ -23,10 +24,6 @@ module.exports = {
       },
     ],
     footerMenu: [
-      {
-        name: 'Portfolio',
-        path: '/portfolio',
-      },
       {
         name: 'Contact',
         path: '/contact',
