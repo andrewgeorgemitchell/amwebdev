@@ -70,5 +70,11 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-material-ui',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-57621410-8',
+      },
+    },
   ],
 };
