@@ -19,7 +19,7 @@
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/styles": "^4.5.0",
-    "@nehalist/gatsby-theme-nehalem": "^1.0.3",
+    "@nehalist/gatsby-theme-nehalem": "^1.0.8",
     "gatsby": "^2.13.55",
     "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-material-ui": "^2.1.6",
