@@ -16,16 +16,6 @@ const teamMembers = [
     position: 'Lead Software Engineer',
     pictureURL: 'https://res.cloudinary.com/dpka4vhu6/image/upload/ar_1:1,c_crop,g_face,h_2500,w_2500,x_0,y_0/v1532992002/amwebdev/andrewPic2018.jpg',
   },
-  {
-    name: 'Marisa Peckham',
-    position: 'Copywriter & Content Strategist',
-    pictureURL: 'https://res.cloudinary.com/dpka4vhu6/image/upload/v1571518568/amwebdev/Marisa-pi.png',
-  },
-  {
-    name: 'Mason Rhodes',
-    position: 'Software Engineer',
-    pictureURL: 'https://res.cloudinary.com/dpka4vhu6/image/upload/ar_1:1,c_thumb,g_face,h_600,w_600/v1571520639/amwebdev/Screenshot_2019-10-19_at_2.17.56_PM.jpg',
-  },
 ];
 
 const Contact = ({ location }) => {

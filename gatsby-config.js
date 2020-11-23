@@ -1,23 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: 'AM Web Development',
-    siteUrl: 'https://amwebdev.netlify.com',
-    description: 'We create %TOPICS%',
+    title: 'AM WebDev',
+    siteUrl: 'https://www.amwebdev.com',
+    description: 'A place for all things %TOPICS%',
     topics: [
-      'Websites',
-      'Apps',
-      'Educational Blog Posts',
-      '',
-      '',
+      'GraphQL',
+      'Node',
+      'Apollo',
+      'Typescript',
+      'React',
+      'Startups',
+      'DevOps',
     ],
     menu: [
       {
         name: 'Home',
         path: '/',
-      },
-      {
-        name: 'Portfolio',
-        path: '/portfolio',
       },
       {
         name: 'Contact',
@@ -34,12 +32,12 @@ module.exports = {
     author: {
       name: 'Andrew Mitchell',
       description: `
-        I'm <strong>Andrew Mitchell</strong>, an Entrepreneur turned Software Engineer.
+        I'm <strong>Andrew Mitchell</strong>, a Software Engineer - GraphQL Enthusiast - Typescript Evangelist - Coding Addict.
         This site acts a my portfolio for side projects as well a place I make blog posts to
-        reaffirm my own knowledge and give back to the community.`,
+        reaffirm my own knowledge and engage with the greater community of Software Engineers`,
       social: {
         facebook: '',
-        twitter: '',
+        twitter: 'https://twitter.com/andrewmitch12',
         linkedin: 'https://www.linkedin.com/in/andrewgeorgemitchell/',
         instagram: '',
         youtube: '',
