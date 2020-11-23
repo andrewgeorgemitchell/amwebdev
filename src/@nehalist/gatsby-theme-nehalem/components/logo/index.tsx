@@ -42,4 +42,5 @@ const Logo: FunctionComponent<LogoProps> = ({ title }) => {
     </HomeLink>
   );
 };
+
 export default Logo;

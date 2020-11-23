@@ -4,21 +4,27 @@ import React, { useState } from 'react';
 import Layout from '@nehalist/gatsby-theme-nehalem/src/components/layout';
 import SEO from '@nehalist/gatsby-theme-nehalem/src/components/seo';
 import { Container } from '@nehalist/gatsby-theme-nehalem/src/components/common';
+import Img from 'gatsby-image';
 import {
   Card, Button, TextField, Modal,
 } from '@material-ui/core';
 
+import { graphql, useStaticQuery } from 'gatsby';
 import styles from '../styles/contact.module.scss';
 
-const teamMembers = [
-  {
-    name: 'Andrew Mitchell',
-    position: 'Lead Software Engineer',
-    pictureURL: 'https://res.cloudinary.com/dpka4vhu6/image/upload/ar_1:1,c_crop,g_face,h_2500,w_2500,x_0,y_0/v1532992002/amwebdev/andrewPic2018.jpg',
-  },
-];
-
 const Contact = ({ location }) => {
+  const logo = useStaticQuery(graphql`
+    query {
+      file(sourceInstanceName: {eq: "imageAssets"}, name: {eq: "aMitch"}) {
+        childImageSharp {
+          fixed(width: 55, height: 55) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
+
   const [formData, updateFormData] = useState({});
   const [formModel, updateFormModal] = useState(false);
   const [modalMessage, updateFormModalMessage] = useState('');
@@ -66,40 +72,22 @@ const Contact = ({ location }) => {
       />
       <Container>
         <div className={styles.container}>
-          <div>
-            <h2>
-              Our Mission:
-            </h2>
-            <p>
-              AM Web Development is dedicated to building and designing unique user
-              experiences for its clients. If you have any questions about the blog
-              or wish to hear about how our team could help you with your next
-              project feel free to reach out.
-            </p>
-          </div>
           <div className={styles.columnsDiv}>
             <div className={styles.ourTeamDiv}>
-              <h2>
-                Our Team:
-              </h2>
-              <div className={styles.teamMembersRow}>
-                {
-                  teamMembers.map(({
-                    pictureURL, name, position,
-                  }) => (
-                    <div>
-                      <img src={pictureURL} alt={`${name}`} />
-                      <strong>{name}</strong>
-                      <strong>{position}</strong>
-                    </div>
-                  ))
-                }
+              <div>
+                <Img fixed={logo.file.childImageSharp.fixed} alt="Andrew Mitchell Avatar" />
+                <strong>Andrew Mitchell</strong>
+                <strong>Software Engineer</strong>
               </div>
+              <p>
+                If you have any questions about the blog feel free to reach out.
+              </p>
             </div>
             <Card className={styles.card}>
               <form
                 name="AM Web Development Contact"
                 netlify
+                netlify-honeypot
                 method="POST"
                 data-netlify="true"
                 onSubmit={handleSubmit}
@@ -110,7 +98,6 @@ const Contact = ({ location }) => {
                 <TextField
                   id="first-name"
                   label="First Name"
-                  htmlFor="firstName"
                   margin="normal"
                   name="firstName"
                   onChange={(event) => handleFormChange(event, 'firstName')}
@@ -119,7 +106,6 @@ const Contact = ({ location }) => {
                 <TextField
                   id="last-name"
                   label="Last Name"
-                  htmlFor="lastName"
                   margin="normal"
                   name="lastName"
                   onChange={(event) => handleFormChange(event, 'lastName')}
@@ -128,7 +114,6 @@ const Contact = ({ location }) => {
                 <TextField
                   id="business-email"
                   label="Business Email"
-                  htmlFor="businessEmail"
                   margin="normal"
                   name="businessEmail"
                   onChange={(event) => handleFormChange(event, 'businessEmail')}
@@ -137,7 +122,6 @@ const Contact = ({ location }) => {
                 <TextField
                   id="phone-number"
                   label="Phone Number"
-                  htmlFor="phoneNumber"
                   margin="normal"
                   name="phoneNumber"
                   onChange={(event) => handleFormChange(event, 'phoneNumber')}
@@ -146,7 +130,6 @@ const Contact = ({ location }) => {
                 <TextField
                   id="company-name"
                   label="Company Name"
-                  htmlFor="companyName"
                   margin="normal"
                   name="companyName"
                   onChange={(event) => handleFormChange(event, 'companyName')}
@@ -154,13 +137,19 @@ const Contact = ({ location }) => {
                 <TextField
                   id="message"
                   label="Message"
-                  htmlFor="message"
                   margin="normal"
                   name="message"
                   onChange={(event) => handleFormChange(event, 'message')}
                   multiline
                   required
                 />
+                <p style={{ display: 'none' }}>
+                  <label>
+                    Don’t fill this out if you're human:
+                    {' '}
+                    <input name="bot-field" />
+                  </label>
+                </p>
                 <Button variant="outlined" type="submit">Submit</Button>
               </form>
               <Modal
