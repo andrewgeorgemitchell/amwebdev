@@ -76,5 +76,11 @@ module.exports = {
         trackingId: 'UA-57621410-8',
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-adsense',
+      options: {
+        publisherId: 'ca-pub-1115526151933070',
+      },
+    },
   ],
 };
