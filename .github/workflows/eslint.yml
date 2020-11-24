@@ -1,4 +1,4 @@
-name: Our First Eslint Checker 👶
+name: Eslint
 
 on:
   pull_request:
