@@ -6,7 +6,7 @@ import SEO from '@nehalist/gatsby-theme-nehalem/src/components/seo';
 import { Container } from '@nehalist/gatsby-theme-nehalem/src/components/common';
 import Img from 'gatsby-image';
 import {
-  Card, Button, TextField, Modal,
+  Card, Button, TextField, Modal, Typography,
 } from '@material-ui/core';
 
 import { graphql, useStaticQuery } from 'gatsby';
@@ -79,9 +79,16 @@ const Contact = ({ location }) => {
                 <strong>Andrew Mitchell</strong>
                 <strong>Software Engineer</strong>
               </div>
-              <p>
+              <Typography>
+                I&apos;m Andrew Mitchell, a Software Engineer - GraphQL Enthusiast -
+                Typescript Evangelist - Coding Addict.
+                This site acts a my portfolio for side projects as well a
+                place I make blog posts to reaffirm my own
+                knowledge and engage with the greater community of Software Engineers
+              </Typography>
+              <Typography>
                 If you have any questions about the blog feel free to reach out.
-              </p>
+              </Typography>
             </div>
             <Card className={styles.card}>
               <form
@@ -144,8 +151,9 @@ const Contact = ({ location }) => {
                   required
                 />
                 <p style={{ display: 'none' }}>
+                  {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                   <label>
-                    Don’t fill this out if you're human:
+                    Don’t fill this out if you&apos;re human:
                     {' '}
                     <input name="bot-field" />
                   </label>
