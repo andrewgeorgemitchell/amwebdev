@@ -1639,7 +1639,7 @@
   resolved "https://registry.yarnpkg.com/@mikaelkristiansson/domready/-/domready-1.0.10.tgz#f6d69866c0857664e70690d7a0bfedb72143adb5"
   integrity sha512-6cDuZeKSCSJ1KvfEQ25Y8OXUjqDJZ+HgUs6dhASWbAX8fxVraTfPsSeRe2bN+4QJDsgUaXaMWBYfRomCr04GGg==
 
-"@nehalist/gatsby-theme-nehalem@^1.0.3":
+"@nehalist/gatsby-theme-nehalem@^1.0.9":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@nehalist/gatsby-theme-nehalem/-/gatsby-theme-nehalem-1.0.9.tgz#14de70ce436b38daf45bd463f605935acdbd4621"
   integrity sha512-mWYJBHsd9cOGNoH64ila9VB/vGHcZJoaAieAJW8KG4U5mDLhrvgxuAMsk2vX2X9OOpQhXH76wIPtMApD+VYKBg==
@@ -6689,7 +6689,7 @@ gatsby-plugin-react-helmet@^3.1.2:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-sass@^2.1.20:
+gatsby-plugin-sass@^2.3.21:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.6.0.tgz#8b7f0fc8c8159b3b4c296e31b77636e94f907e15"
   integrity sha512-xifT2ze4rP8K0gf2iN6wffnYWqTwL9zxqgVuMUkIAGBeOc0vpncBCaooFIyee6pvvcAfKy/6GMKXZmQPPG9uQA==
@@ -12270,7 +12270,7 @@ react-typed@^1.1.2:
     prop-types "^15.6.0"
     typed.js "^2.0.6"
 
-react@^16.9.0:
+react@^16.13.1:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
