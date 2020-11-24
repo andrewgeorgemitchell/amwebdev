@@ -11,7 +11,7 @@
   "main": "n/a",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve"
@@ -20,6 +20,7 @@
     "@material-ui/core": "^4.5.1",
     "@material-ui/styles": "^4.5.0",
     "@nehalist/gatsby-theme-nehalem": "^1.0.9",
+    "cross-env": "^7.0.2",
     "gatsby": "^2.27.0",
     "gatsby-image": "^2.6.0",
     "gatsby-plugin-google-adsense": "^1.1.3",
