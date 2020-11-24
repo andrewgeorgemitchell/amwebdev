@@ -2,7 +2,7 @@ name: Our First Eslint Checker 👶
 
 on:
   pull_request:
-    branches: [ main ] # PRs to main only
+    branches: [ master ] # PRs to main only
 
 jobs: # Jobs to be run
   run-linters: # Name of job (pretty arbitrary can be called basically anything)
