@@ -6,33 +6,32 @@
 
 .columnsDiv {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-  @include md {
-    justify-content: space-between;
+  align-items: center;
+  & > * {
+    max-width: 400px;
   }
   .ourTeamDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
+    text-align: center;
     h2 {
       margin-top: 0px;
     }
-    .teamMembersRow {
-      max-width: 400px;
+    div {
+      width: 200px;
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      div {
-        width: 200px;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      img {
-        width: 123px;
-        height: 123px;
-        border-radius: 50%;
-      }
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    img {
+      width: 123px;
+      height: 123px;
+      border-radius: 50%;
     }
   }
   .card {
