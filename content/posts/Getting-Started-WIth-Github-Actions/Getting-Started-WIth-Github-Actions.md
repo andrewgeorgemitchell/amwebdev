@@ -1,5 +1,5 @@
 ---
-title: "Github Action: Getting Started Guide"
+title: "Github Actions: Getting Started Guide"
 path: "/getting-started-with-github-actions"
 tags: ["NodeJS"]
 featuredImage: "./cover.jpg"
@@ -10,13 +10,13 @@ updated: 2020-11-23
  
 ## Overview
 
-Hello again, today I'm get you started using Github Actions. Github Actions are an absolutely amazing resource for helping developers perform mundane tasks automatically. If you have never setup CI/CD systems before and want to get started, there is no better way than with Github Actions. So lets get started!
+Hello again, today I'm going to get you started using Github Actions. Github Actions are an absolutely amazing resource for helping developers perform mundane tasks automatically. If you have never setup CI/CD systems before and want to get started, there is no better way than with Github Actions. So lets get started!
 
 ## Github Actions Pricing
 
-**TLDR; Its free for public repos and very cheap for private repos with a very generous free tier! (2000 Minute Free Tier)** 
+**TLDR; Its free for public repos and very cheap for private repos with a very generous free tier! (2000 Minutes Free)** 
 
-So lets talk pricing first since you don't want to read a tutorial about some great product that you can't afford, luckily for you Github Actions Pricing is very affordable and by affordable I mean basically free for most users (I personally have payed a dime) and very affordable for larger teams and organizations, but don't take my word for it go checkout their pricing page: [Github Actions Pricing Page](https://github.com/pricing).
+So lets talk pricing first since you don't want to read a tutorial about some great product that you can't afford, luckily for you Github Actions Pricing is very affordable and by affordable I mean basically free for most users (I personally haven't payed a dime) and very affordable for larger teams and organizations, but don't take my word for it go check out their pricing page: [Github Actions Pricing Page](https://github.com/pricing).
 
 ![Github Pricing Plan Page Screenshot](./GithubPricing.png)
 
@@ -31,18 +31,18 @@ First things first we need to create the ```.github/workflows``` folders in the 
 
  ```mkdir .github/workflows```
 
-This is where all your Github Actions live in your repo and by adding this folder we are letting Github know that there are actions inside this repo that it needs to run the next time you push up your code.
+This is where all your Github Actions live in your repo and by adding this folder we are letting Github know that there are actions inside this repo that it needs to be executed the next time you push up your code.
 
 ### Create our first Github Action
 
-Next lets go ahead and create our file, Github Actions use YAML files so our file will end with ```.yml``` in this case lets call just call it ```eslint.yml``` again you can create it in VS Code or using the following command:
+Next lets go ahead and create our file, Github Actions use YAML files for configuration so our file will end with ```.yml``` in this case lets call just call it ```eslint.yml``` again you can create it in VS Code or using the following command:
 
 ```touch .github/workflows/eslint.yml```
 
 Go ahead and open your new file and lets start coding!
 
 
-#### Name our Workflow
+### Name our Workflow
 The first thing we need to add is name of our Github Action Workflow. Like this:
 
 ```yaml
@@ -51,9 +51,9 @@ The first thing we need to add is name of our Github Action Workflow. Like this:
 name: Our First Eslint Checker 👶
 ```
 
-#### Specify when our workflow should trigger
+### Specify when our workflow should trigger
 
-Next lets we are going to define when this action should run. There are a couple options here but we going to go with whenever a Pull request is created or updated, which we specify in the file using the ```on``` key:
+Next we are going to define when this action should trigger. There are a couple options here, but we going to go with whenever a **Pull Request** is **created** or **updated**, which we specify in the file using the ```on``` keyword:
 
 ```yaml
 # eslint.yml
@@ -65,8 +65,8 @@ on:
     branches: [ main ] # PRs to main only
 ```
 
-#### Setup our workflow environment
-Ok the last thing we have to do before we get to the meat of it is specify the environment or virtual machine we want our CI to run in. For most cases using ubuntu-latest is going to be our best bet. So lets do that
+### Setup our workflow environment
+Ok the last thing we have to do before we get to the meat of it is specify the environment or virtual machine we want our CI to run in. For most cases using ubuntu-latest is going to be our best bet. So lets do that:
 
 ```yaml
 # eslint.yml
@@ -79,13 +79,13 @@ on:
 
 jobs: # Jobs to be run
   run-linters: # Name of job (pretty arbitrary can be called basically anything)
-    name: Lint Frontend # (!Important) This name is what will show up in the Github UI so its important
+    name: Lint Frontend # (!Important) This name will show up in the Github UI so its important
     runs-on: ubuntu-latest # Virtual env to use
 ```
 
-#### Define our Workflow steps
+### Define our Workflow steps
 
-Ok last but not least we get to design the steps that our action should take to perform our linting task. These steps operate very similarly to Pseudo code, because each step has a name (which will be visible in the Github UI for debugging) and an action that it will do. The actions can either be a command that the terminal will execute or more powerfully it can execute an entire function from the Github Marketplace, most them are free so don't let the term marketplace scare you! So lets go ahead and layout our actions in a step by step manor:
+Ok last, but not least we get to define the steps that our action should take to perform our linting task. These steps operate very similarly to pseudo code, because each step has a name (which will be visible in the Github UI for debugging) and an action that it executes. The actions can either be a command that the terminal will execute or more powerfully it can execute an entire plugin from the Github Marketplace, most plugins are free so don't let the term marketplace scare you! So lets go ahead and layout our actions in a step by step manor:
 
 ```yaml
 # eslint.yml
@@ -98,7 +98,7 @@ on:
 
 jobs: # Jobs to be run
   run-linters: # Name of job (pretty arbitrary can be called basically anything)
-    name: Lint Code # (!Important) This name is what will show up in the Github UI so its important
+    name: Lint Code # (!Important) This name will show up in the Github UI so its important
     runs-on: ubuntu-latest # Virtual env to use
 
     steps:
@@ -121,3 +121,9 @@ jobs: # Jobs to be run
 ```
 
 And there you have it. Go ahead and create a PR with these changes and you will see the Github Action Takes no time in telling you about all your eslint errors!
+
+![Github Action in Action!](./ActionScreenshot.png)
+
+## Conclusion
+
+There is so much more you can do with Github Actions, and I will probably create more tutorials in the future going into more depth, but if you have any more questions feel free to reach out either by my contact page or better yet leave a comment below and I'd be happy to help you in anyway I can!
