@@ -79,7 +79,7 @@ const Contact = ({ location }) => {
                 <strong>Andrew Mitchell</strong>
                 <strong>Software Engineer</strong>
               </div>
-              <hr style={{ width: '100%' }} />
+              <br />
               <Typography>
                 I&apos;m Andrew Mitchell, a Software Engineer - GraphQL Enthusiast -
                 Typescript Evangelist - Coding Addict.
