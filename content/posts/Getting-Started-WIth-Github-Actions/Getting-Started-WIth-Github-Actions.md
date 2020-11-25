@@ -1,7 +1,7 @@
 ---
 title: "Github Actions: Getting Started Guide"
 path: "/getting-started-with-github-actions"
-tags: ["NodeJS"]
+tags: ["DevOps"]
 featuredImage: "./cover.jpg"
 excerpt: How to get up and running with Github Actions, in only a couple minutes.
 created: 2020-11-23
