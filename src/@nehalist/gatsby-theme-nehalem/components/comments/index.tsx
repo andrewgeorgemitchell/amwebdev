@@ -2,7 +2,7 @@ import { Card, makeStyles } from '@material-ui/core';
 import React from 'react';
 import Commento from '../../../../components/Commento/Commento';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: 50,
     display: 'flex',
@@ -10,6 +10,11 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
     '& .commentsCard': {
       padding: 60,
+      width: '90%',
+      minHeight: 200,
+      [theme.breakpoints.up('md')]: {
+        width: 800,
+      },
     },
   },
 }));
