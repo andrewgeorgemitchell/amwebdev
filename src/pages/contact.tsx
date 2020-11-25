@@ -6,7 +6,7 @@ import SEO from '@nehalist/gatsby-theme-nehalem/src/components/seo';
 import { Container } from '@nehalist/gatsby-theme-nehalem/src/components/common';
 import Img from 'gatsby-image';
 import {
-  Card, Button, TextField, Modal,
+  Card, Button, TextField, Modal, Typography, Divider,
 } from '@material-ui/core';
 
 import { graphql, useStaticQuery } from 'gatsby';
@@ -73,16 +73,25 @@ const Contact = ({ location }) => {
       <Container>
         <div className={styles.container}>
           <div className={styles.columnsDiv}>
-            <div className={styles.ourTeamDiv}>
+            <Card className={styles.ourTeamDiv}>
               <div>
                 <Img fixed={logo.file.childImageSharp.fixed} alt="Andrew Mitchell Avatar" />
                 <strong>Andrew Mitchell</strong>
                 <strong>Software Engineer</strong>
               </div>
-              <p>
+              <hr style={{ width: '100%' }} />
+              <Typography>
+                I&apos;m Andrew Mitchell, a Software Engineer - GraphQL Enthusiast -
+                Typescript Evangelist - Coding Addict.
+                This site acts a my portfolio for side projects as well a
+                place I make blog posts to reaffirm my own
+                knowledge and engage with the greater community of Software Engineers
+              </Typography>
+              <br />
+              <Typography>
                 If you have any questions about the blog feel free to reach out.
-              </p>
-            </div>
+              </Typography>
+            </Card>
             <Card className={styles.card}>
               <form
                 name="AM Web Development Contact"
@@ -144,8 +153,9 @@ const Contact = ({ location }) => {
                   required
                 />
                 <p style={{ display: 'none' }}>
+                  {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                   <label>
-                    Don’t fill this out if you're human:
+                    Don’t fill this out if you&apos;re human:
                     {' '}
                     <input name="bot-field" />
                   </label>
