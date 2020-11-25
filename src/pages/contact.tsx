@@ -75,9 +75,7 @@ const Contact = ({ location }) => {
           <div className={styles.columnsDiv}>
             <Card className={styles.ourTeamDiv}>
               <div>
-                <Img fixed={logo.file.childImageSharp.fixed} alt="Andrew Mitchell Avatar" />
-                <strong>Andrew Mitchell</strong>
-                <strong>Software Engineer</strong>
+                <Img fixed={logo.file.childImageSharp.fixed} style={{ height: 100, width: 100 }} alt="Andrew Mitchell Avatar" />
               </div>
               <br />
               <Typography>
