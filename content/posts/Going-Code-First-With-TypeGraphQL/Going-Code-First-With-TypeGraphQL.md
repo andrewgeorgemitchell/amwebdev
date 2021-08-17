@@ -1,9 +1,9 @@
 ---
-title: "Going Code First with TypeGraphQL"
+title: "Going Code First: Sharing Types with TypeGraphQL"
 path: "/going-code-first-with-typegraphql"
 tags: ["GraphQL", "Typescript"]
 featuredImage: "./cover.jpg"
-excerpt: How using a code first GraphQL approach will save you from maintaining separate GraphQL & TypeScript types.
+excerpt: How using a code first GraphQL approach will save you from maintaining separate GraphQL & TypeScript types. First part of the Going Code First series which dives deep into the power of GraphQL.
 created: 2021-08-16
 updated: 2021-08-16
 ---
