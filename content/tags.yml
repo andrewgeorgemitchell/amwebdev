@@ -1,10 +1,10 @@
-# - name: Gatsby
-#   color: "#007acc"
-#   icon: ./assets/images/gatsby.png
-#   featured: true
+- name: GraphQL
+  color: "#e535ab"
+  icon: ./assets/images/graphql.png
+  featured: true
 
 - name: NodeJS
-  color: "#007acc"
+  color: "#3C873A"
   icon: ./assets/images/nodejs.png
   featured: true
 
@@ -13,12 +13,12 @@
   icon: ./assets/images/actions.png
   featured: true
 
-# - name: Python
-#   color: "#007acc"
-#   icon: ./assets/images/Python.png
-#   featured: true
+- name: Typescript
+  color: "#007acc"
+  icon: ./assets/images/typescript.png
+  featured: true
 
 # - name: React
-#   color: "#007acc"
+#   color: "#61DBFB"
 #   icon: ./assets/images/React.png
-#   featured: true
+#   featured: false
