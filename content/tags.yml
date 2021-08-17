@@ -18,7 +18,7 @@
   icon: ./assets/images/typescript.png
   featured: true
 
-- name: React
-  color: "#61DBFB"
-  icon: ./assets/images/React.png
-  featured: false
+# - name: React
+#   color: "#61DBFB"
+#   icon: ./assets/images/React.png
+#   featured: false
