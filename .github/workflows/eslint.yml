@@ -7,7 +7,7 @@ on:
 jobs: # Jobs to be run
   run-linters: # Name of job (pretty arbitrary can be called basically anything)
     name: Lint Code # (!Important) This name is what will show up in the Github UI so its important
-    runs-on: ubuntu-latest # Virtual env to use
+    runs-on: ${{ fromJSON(vars.USE_HOSTED_RUNNERS == 'true' && '"ubuntu-latest"' || '"jog"') }} # Virtual env to use
 
     steps:
       - name: Check out Git repository # The first step of most actions is going to 
